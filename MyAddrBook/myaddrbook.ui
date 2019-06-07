@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MyAddrBook</class>
+ <widget class="QWidget" name="MyAddrBook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>396</width>
+    <height>386</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MyAddrBook</string>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>393</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEditName"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QTextEdit" name="textEditAddr"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_Name">
+      <property name="text">
+       <string>Name:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_Addr">
+      <property name="text">
+       <string>Address:</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_Add">
+        <property name="text">
+         <string>&amp;Add</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Edit">
+        <property name="text">
+         <string>&amp;Edit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Remove">
+        <property name="text">
+         <string>&amp;Remove</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Find">
+        <property name="text">
+         <string>&amp;Find</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Submit">
+        <property name="text">
+         <string>&amp;Submit</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Cancle">
+        <property name="text">
+         <string>&amp;Cancle</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Load">
+        <property name="text">
+         <string>&amp;Load...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Save">
+        <property name="text">
+         <string>&amp;Save...</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Export">
+        <property name="text">
+         <string>E&amp;xport</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item row="2" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Previous">
+        <property name="text">
+         <string>&amp;Previous</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_Next">
+        <property name="text">
+         <string>&amp;Next</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>lineEditName</tabstop>
+  <tabstop>textEditAddr</tabstop>
+  <tabstop>pushButton_Add</tabstop>
+  <tabstop>pushButton_Edit</tabstop>
+  <tabstop>pushButton_Remove</tabstop>
+  <tabstop>pushButton_Find</tabstop>
+  <tabstop>pushButton_Submit</tabstop>
+  <tabstop>pushButton_Cancle</tabstop>
+  <tabstop>pushButton_Load</tabstop>
+  <tabstop>pushButton_Save</tabstop>
+  <tabstop>pushButton_Export</tabstop>
+  <tabstop>pushButton_Next</tabstop>
+  <tabstop>pushButton_Previous</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton_Add</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>48</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>263</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Edit</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyEdit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>81</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Remove</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyRemove()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>114</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Find</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyFind()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>147</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Submit</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MySubmit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>180</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Cancle</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyCancle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>213</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Load</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyLoad()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Save</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MySave()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Export</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyExport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>348</x>
+     <y>312</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Previous</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyPrevious()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>128</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_Next</sender>
+   <signal>clicked()</signal>
+   <receiver>MyAddrBook</receiver>
+   <slot>MyNext()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>237</x>
+     <y>365</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>197</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>MyAdd()</slot>
+  <slot>MyEdit()</slot>
+  <slot>MyRemove()</slot>
+  <slot>MyFind()</slot>
+  <slot>MySubmit()</slot>
+  <slot>MyCancle()</slot>
+  <slot>MyLoad()</slot>
+  <slot>MySave()</slot>
+  <slot>MyExport()</slot>
+  <slot>MyPrevious()</slot>
+  <slot>MyNext()</slot>
+ </slots>
+</ui>
